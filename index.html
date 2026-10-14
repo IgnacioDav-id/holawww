@@ -1,63 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8"> <!--este codigo permite usar caracteres especiales-->
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <!--este codigo permite usar caracteres especiales-->
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />    
     <title>HOLA MUNDO WEB</title>
-  </head> 
-  
+    <link rel="stylesheet" href="estilos/style.css" />
+    <!--INSERTANDO ESTILOS CSS
+    <style>
+      body{
+        background-color: #3F9191;
+      }
+      h1{
+        background-color: aqua;
+        text-align: center;
+      }
+      a{
+        background-color: #46ED0C;
+      }
+
+    </style>-->
+  </head>
+
   <!--PARTE VISIBLE -->
-  
+
   <body>
     <!---AQUI VA EL TITULO DE LA PAGINA WEB-->
     <!--h -->
-    <h1>Mi primera página WEB desarrollado por yo </h1> 
-    <h2>Mi primera pagina WEB</h2>  <!--Subtitulo 1-->
-    <h3>Mi primera página</h3>      <!--Subtitulo 2-->
+    <h1>Mi primera página WEB desarrollado por yo</h1>
+    <h2>Mi primera pagina WEB</h2>
+    <!--Subtitulo 1-->
+    <h3>Mi primera página</h3>
+    <!--Subtitulo 2-->
     <h4>Mi primera pagina</h4>
     <h5>Mi primera pagina</h5>
     <h6>Mi primera pagina</h6>
     <!--CONTENEDORES ---- espacios donde se crea contendio dentro de html
           section, div,article-->
-    <section>
+    <section class="enlace">
       <!--Enzale a YOUTUBE se utiliza etiqueta (a = ancle)-->
       <!--target="_blank = para que el recurso se abra en una nueva pestaña-->
       <!--RUTAS ABSOLUTAS = cuando queremos enlazarnos a recursos externos al proyecto-->
-      <!--RURAS RELATIVAS = cuando quiero enlazarme recurso dentro de mi proyecto-->      
+      <!--RURAS RELATIVAS = cuando quiero enlazarme recurso dentro de mi proyecto-->
       <!--ETIQUETAS DOBLES = ....-->
       <!--ETIQUETAS SIMPLES = .....-->
       <!--ETIQUETA SALTO DE LINEA  <br> -->
 
-          <a href="https://youtu.be/_tA5cinv0U8?si=bU9SnSZ2KWsANP23" target="_blank">
-            Ir a YOUTUBE a ver un video de IA
-          </a>
+      <a
+        href="https://youtu.be/_tA5cinv0U8?si=bU9SnSZ2KWsANP23"
+        target="_blank"
+      >
+        Ir a YOUTUBE a ver un video de IA</a
+      >
 
-          <br> <!--ETIQUETA SALTO DE LINEA  <br> -->
+      <br />
+      <!--ETIQUETA SALTO DE LINEA  <br> -->
+      <img
+        src="img/images.jpg"
+        alt="LOGO BAKKU"
+        width="1500px"
+        
+      id="imagen"/>
 
-          <img src="img/images.jpg" alt="LOGO BAKKU" width="1500px" height="1000px" >
-          
-          <br> <!--ETIQUETA SALTO DE LINEA  <br> -->
-          <!--PARRAFO <p>-->
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cumque? Ducimus similique architecto accusantium laboriosam deleniti minus excepturi mollitia eos sed dolorem asperiores, ut, pariatur, sint vero nam rerum amet.
-            Assumenda mollitia ullam fugit quidem cupiditate dolores molestias nulla blanditiis consequuntur ratione libero nostrum, voluptas ea non ipsum. Eum, sit. Vero dignissimos esse excepturi mollitia, sequi consequuntur at accusantium quis?
-            Deserunt ipsa eaque aspernatur sint a eius nemo, nesciunt fugit excepturi et, dolorem quae recusandae est quam quia inventore sed cum magni temporibus! Iusto atque temporibus quam nulla ea quasi!
-            Ipsum id saepe quam! Nobis amet nisi sequi provident nam. Est autem minus eos reprehenderit quibusdam libero voluptate, eligendi earum doloremque nobis placeat commodi beatae assumenda quae deserunt pariatur quaerat!
-            Praesentium expedita vel similique quia repellendus natus necessitatibus, nobis ab quos. Vel natus, aperiam consequatur, modi ipsam quam repellat placeat aspernatur cupiditate repudiandae magnam rerum recusandae repellendus voluptates, quisquam commodi.
-        </p>
-        <br>      
-    </section><!--FIN SECTION-->
+      <br />
+      <!--ETIQUETA SALTO DE LINEA  <br> -->
+      <!--PARRAFO <p>-->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+        cumque? Ducimus similique architecto accusantium laboriosam deleniti
+        minus excepturi mollitia eos sed dolorem asperiores, ut, pariatur, sint
+        vero nam rerum amet. Assumenda mollitia ullam fugit quidem cupiditate
+        dolores molestias nulla blanditiis consequuntur ratione libero nostrum,
+        voluptas ea non ipsum. Eum, sit. Vero dignissimos esse excepturi
+        mollitia, sequi consequuntur at accusantium quis? Deserunt ipsa eaque
+        aspernatur sint a eius nemo, nesciunt fugit excepturi et, dolorem quae
+        recusandae est quam quia inventore sed cum magni temporibus! Iusto atque
+        temporibus quam nulla ea quasi! Ipsum id saepe quam! Nobis amet nisi
+        sequi provident nam. Est autem minus eos reprehenderit quibusdam libero
+        voluptate, eligendi earum doloremque nobis placeat commodi beatae
+        assumenda quae deserunt pariatur quaerat! Praesentium expedita vel
+        similique quia repellendus natus necessitatibus, nobis ab quos. Vel
+        natus, aperiam consequatur, modi ipsam quam repellat placeat aspernatur
+        cupiditate repudiandae magnam rerum recusandae repellendus voluptates,
+        quisquam commodi.
+      </p>
+    </section>
+    <!--FIN SECTION-->
 
     <!--CONTENDEDOR DE LISTAS-->
     <div>
       <!--LISTAS ORDENADAS = orden gerarquico-->
       <!--LISTAS DESORDENADAS = orden gerarquico-->
       <h2>TIPOS DE CARROS</h2>
-      <ul> <!--DESORDENADAS (No tienen numeracion)-->
-        <li>Ferrari
+      <ul>
+        <!--DESORDENADAS (No tienen numeracion)-->
+        <li>
+          Ferrari
           <ul>
             <li>Mz32</li>
-            <li>Mark32  </li>
+            <li>Mark32</li>
           </ul>
         </li>
         <li>Mazda</li>
@@ -65,10 +106,107 @@
         <li>Ktm</li>
         <li>Peugoet</li>
       </ul>
-
     </div>
+    <!--Creacion de tablas-->
+    <section>
+      <div>
+        <table border="1px">
+          <!--border = borde-->
+          <thead>
+            <!--TABLA HORIZONTALES - TABLE ROW-->
+            <th>PAISES</th>
+            <!--Table head-->
+            <th>POBLACION</th>
+            <th>CONTINENTE</th>
+          </thead>
+          <thead>
+            <td>Ecuador</td>
+            <!--DATOS DE LA TABLA - TABLE DATE-->
+            <td>1800000</td>
+            <td>America</td>
+          </thead>
+          <thead>
+            <td>Colombia</td>
+            <td>12</td>
+            <td>America</td>
+          </thead>
+          <thead>
+            <td>España</td>
+            <td>219219</td>
+            <td>Europa</td>
+          </thead>
+        </table>
+      </div>
+      <!--Tabla de lenguaje de programacion-->
 
-   
+      <div>
+        <h2>LENGUAJES DE PROGRAMACIÓN</h2>
+        <table border="1px">
+          <thead>
+            <th>POSICIÓN</th>
+            <th>LENGUAJE</th>
+          </thead>
+          <thead>
+            <td>1</td>
+            <!--colspan="2" = para unir dos columnas-->
+            <td>Phyton</td>
+            <!--rowspan  para unir dos filas-->
+          </thead>
+          <thead>
+            <td>2</td>
+            <td>JavaScript</td>
+          </thead>
+          <thead>
+            <td>3</td>
+            <td>TypeScript</td>
+          </thead>
+          <thead>
+            <td>4</td>
+            <td>Java</td>
+          </thead>
+          <thead>
+            <td>5</td>
+            <td>C#</td>
+          </thead>
+          <thead>
+            <td>6</td>
+            <td>C++</td>
+          </thead>
+          <thead>
+            <td>7</td>
+            <td>Go</td>
+          </thead>
+          <thead>
+            <td>8</td>
+            <td>Rust</td>
+          </thead>
+          <thead>
+            <td>9</td>
+            <td>PHP</td>
+          </thead>
+          <thead>
+            <td>10</td>
+            <td>Kotlin</td>
+          </thead>
+        </table>
+        <p>No tienen orden</p>
+      </div>
+    </section>
+
+    <!--Enlace a la tabla de ventas -->
+    <!--../ para salir a anterior carpeta-->
+    <div>
+      <a href="tablas/tabla.html">Ir a la tabla de ventas</a>
+    </div>
+    <div>
+      <a href="tablas/Formularios/Formulario.html"> ir a Formularios</a>
+    </div>
+    <div>
+      <a href="tablas/Formularios/FormularioRegistro.html"
+        >Ir a Formulario de registro e informacion</a>
+    </div>
+    <div>
+      <a href="tablas/tablas2.html">Tabla 2 INGRESO </a>
+    </div>
   </body>
-
 </html>

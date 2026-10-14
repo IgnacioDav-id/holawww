@@ -1,0 +1,231 @@
+/*TIPO DE SELECTORES
+1.- GLOBALES = todo el documento
+2.-ETIQUETA se aplica a la etiqueta correspondiente
+3.- CLASE se aplica al componente indicando que se invoca su nombre se utiliza las veces necesarias t el simbolo es el PUNTO
+4.- ID = simbolo es el # mediante su nombre 
+*/
+
+/*-----------------
+SELECTOR GLOBAL
+------------
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 32px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3E4C52;
+    background-color: #F2DFE3;
+}
+
+/*APLIACAMOS ESTILOS AL CONTENEDOR MAIN*/
+
+main{
+    max-width: 1400px;
+    margin: 1 auto;
+
+}
+
+/*ESTILOS PARA EL HEADER*/
+
+header{
+    margin-bottom: 24px;
+
+}
+
+/*ESTILOS H1*/
+ h1{
+    margin: 0 0 8px ;
+    font-size: clamp(24px, 4vm, 34px);
+    color: darkgray;
+}
+
+/*ESTILOS PARA p DENTRO DEL HEADER*/
+header p{
+    margin: 0;
+    color: black;
+    line-height: 1.8;
+}
+
+/*Permite consultar todas las columnas en pnatllas pequenias*/
+
+.tabla-contenedor{
+    overflow-x: auto;
+    background-color: white;
+    border: #3E4C52 solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 24px #3E4C52;
+}
+
+/*invocamos un pseudocodigo*/
+.tabla-contenedor:focus-visible{ /*para cuando se selecciona con el TAB por ejemplo le da una tipo area de seleccion */
+    outline: 2px solid #b30012;
+    outline-offset: 4px;
+}
+
+/*creamos estilos a la etiqueta table*/
+
+table{
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    font-size: 14px;   
+}
+
+caption{
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: 700;
+    color: #037b49; 
+    background-color: white;
+}
+
+/*estilos para la cabecera de la tabla*/
+
+thead th{
+    padding: 16px 12px;
+    color: white;
+    background-color: #406353;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 1.2;
+}
+
+thead tr:nth-child(2) th{ /*selecciona las celdas de encabezado th que pertenecen a la segunda fila tr del encabezado*/
+    background-color: #143441;
+}
+
+tbody td,
+tbody th{
+    padding: 16px 12px;
+    border-bottom: 1px solid #65757b;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e6e6e6;
+}
+
+tbody tr:hover{
+    background-color: #d9d9d9;
+}
+
+tbody tr:last-child td,
+tbody tr:last-child th{
+    border-bottom: none;
+}
+
+.categoria {
+    width: 160px;
+    background-color: #f0efef;
+    color: #3E4C52;
+    font-weight: 700;
+}
+.categoria small{ /*parrafo dentro de categoria*/
+    display: block;
+    margin-top: 6px;
+    color: #3E4C52;
+    font-weight: 400; /*para grosor de letra*/
+}
+
+.producto{
+    font-weight: 700;
+}
+
+.descripcion{
+    min-width: 190px;
+    max-width: 260px;
+    color: black;
+}
+
+.numero{
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.dinero{
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.total-ventas{
+    color: #3E4C52;
+    font-weight: 700;
+}
+.imagen-producto{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    padding: 4px;
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid #3E4C52;
+    border-radius: 8px;
+}
+
+/*selector tipo clase*/
+.container{
+    color: blue;
+    text-align: right;
+}
+.nota{
+    margin: 12px 0 24px;
+    font-size: 13px;
+    color: #3E4C52;
+}
+
+.enlace-home{
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background-color: #080752;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.enlace-home:hover{
+    background-color: #0d0da7;
+    transform: scale(1.05);
+}
+
+.enlace-home:focus-visible{
+    outline: 2px solid #b30012;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 24px 12px;
+    }
+    thead th,
+    tbody td,
+    tbody th{
+        padding: 12px 10px;
+    }
+}
+
+
+
+/*-----------------
+SELECTOR CLASE
+------------
+*/
+.enlace {
+    text-align: right;
+    color: blue;
+}
+
+/*-----------------
+SELECTOR ID
+------------
+*/
+#imagen{
+    width: 100%;
+}

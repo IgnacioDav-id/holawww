@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Registro</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>FORMULARIO DE REGISTRO</h1>
+        <h2>Instituto Superior Tecnológico Quito</h2>
+      </header>
+    </div>
+    <div>
+      <form action="">
+        <div>
+          <h2>1. Datos Personales</h2>
+        </div>
+        <div>
+          <label for="nombres">Nombres</label>
+          <input type="text" name="nombres" id="nombres" />
+        </div>
+        <div>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" name="apellidos" id="apellidos" />
+        </div>
+        <div>
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input type="date" name="nacimiento" id="nacimiento" />
+        </div>
+        <div>
+          <label for="cedula">Cedula / Identificación:</label>
+          <input type="number" name="cedula" id="cedula" />
+        </div>
+        <div>
+          <label for="genero">Género: </label>
+          <label for="Masculino">Masculino</label>
+          <input type="radio" name="genero" id="Masculino" />
+          <label for="Femenino">Femenino</label>
+          <input type="radio" name="genero" id="Femenino" />
+          <label for="Otro">Otro</label>
+          <input type="radio" name="genero" id="Otro" />
+        </div>
+        <div>
+          <label for="estadocivil">Estado Civil</label>
+          <select name="estadocivil" id="estadocivil">
+            <option value="Seleccione">Seleccione una opcion</option>
+            <option value="Soltero">Soltero</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="UnionLibre">Union Libre</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Correo Electronico</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="number" name="telefono" id="telefono" />
+        </div>
+        <div>
+          <label for="direccion">Dirección</label>
+          <input type="text" name="direccion" id="direccion" />
+        </div>
+        <div>
+          <h2>2. Información Académica</h2>
+        </div>
+        <div>
+          <label for="carrera">Carrera</label>
+          <select name="carrera" id="carrera">
+            <option value="Seleccione">Seleccione una opcion</option>
+            <option value="Ds">Desarrollo de Software</option>
+            <option value="Mk">Marketing Digital</option>
+            <option value="IA">Inteligencia Artificial</option>
+            <option value="Ad">Administración de Empresas</option>
+          </select>
+        </div>
+        <div>
+          <label for="nivel">Nivel</label>
+          <select name="nivel" id="nivel">
+            <option value="Seleccione">Seleccione una opcion</option>
+            <option value="Primero">Primero</option>
+            <option value="Segundo">Segundo</option>
+            <option value="Tercero">Tercero</option>
+            <option value="Cuarto">Cuarto</option>
+            <option value="Quinto">Quinto</option>
+          </select>
+        </div>
+        <div>
+          <label for="modalidad">Modalidad de Estudios:</label>
+          <input type="radio" name="modalidad" id="Presencial" />
+          <label for="Presencial">Presencial</label>
+          <input type="radio" name="modalidad" id="Linea" />
+          <label for="Linea">En Linea</label>
+          <input type="radio" name="modalidad" id="Híbrida" />
+          <label for="Híbrida">Híbrida</label>
+        </div>
+        <div>
+          <label for="Periodo">Periodo Académico</label>
+          <select name="Periodo" id="Periodo">
+            <option value="Seleccione">Seleccione una opcion</option>
+            <option value="2026-2027">2026-2027</option>
+            <option value="2025-2026">2025-2026</option>
+            <option value="2024-2025">2024-2025</option>
+            <option value="Otro">Otro Periodo</option>
+          </select>
+        </div>
+        <div>
+          <label for="turno">Turno:</label>
+          <input type="radio" name="horario" id="mañana" />
+          <label for="mañana">Mañana</label>
+          <input type="radio" name="horario" id="tarde" />
+          <label for="tarde">Tarde</label>
+          <input type="radio" name="horario" id="noche" />
+          <label for="noche">Noche</label>
+        </div>
+        <div>
+          <label for="informacion">Como se entero de la institución</label>
+          <select name="informacion" id="informacion">
+            <option value="Seleccione">Seleccione una opcion</option>
+            <option value="facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Revista">Revista</option>
+            <option value="Folleto">Folletos promocionales</option>
+          </select>
+        </div>
+        <br />
+        <!--Subir documentos-->
+        <div>      
+          <div>
+            <label for="Foto">Foto a subir</label>
+            <input type="file" name="Foto" id="Foto" />
+          </div>
+          <div>
+            <label for="Archivo">Archivos</label>
+            <input type="file" name="Foto" id="Archivo" multiple>
+          </div>
+        </div>
+
+        <br />
+        <!--BOTONES DEREGRESO-->
+        <div>
+          <div>
+            <a href="../../index.html">Regreso a Pagina Principal</a>
+          </div>
+
+          <div>
+            <a href="Formulario.html">Formulario basico</a>
+          </div>
+          <div>
+            <a href="../../tablas/tabla.html">Tabla de Productos</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
